@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view id="wrap" class="animated bounce delay-2s wrap">
+    <van-button type="primary" bindtap="sendEmail">发送邮件</van-button>
+  </view>
+  <view id="wrap" class="animated bounce delay-2s wrap">
+    <van-button type="danger" bindtap="getUserStep">获取微信步数</van-button>
+  </view>
+</view>
