@@ -1,7 +1,7 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
 const nodemailer = require("nodemailer")
-const OPEN_EMAIL = "1978560403@qq.com"; // 开通服务的邮箱（一般都是自己的邮箱）
+const OPEN_EMAIL = ""; // 开通服务的邮箱（一般都是自己的邮箱）
 
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV }) // 使用当前云环境
 
@@ -36,12 +36,12 @@ function sendEmail ({ subject, text }) {
     auth: {
       user: OPEN_EMAIL, // 你的邮箱
       // 这里密码不是qq密码，是你设置的smtp授权码
-      pass: "mvjypzpzlccbdefe",
+      pass: "",
     },
   });  
   const mailOptions = {
     from: OPEN_EMAIL, 
-    to: "1978560403@qq.com", 
+    to: "", 
     subject: subject, 
     // 发送text或者html格式
     text: text
